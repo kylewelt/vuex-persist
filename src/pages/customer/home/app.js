@@ -3,7 +3,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './app.vue'
 
-import store from '../../../store/store.js'
+import store from '../../../store/index.js'
 
 Vue.use(ElementUI)
 
