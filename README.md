@@ -13,8 +13,6 @@ npm run dev
 
 ## Pages
 
-[http://localhost:8010/user/login.html](http://localhost:8010/user/login.html)
-
 [http://localhost:8010/user/index.html](http://localhost:8010/user/index.html)
 
 [http://localhost:8010/customer/index.html](http://localhost:8010/customer/index.html)
