@@ -113,7 +113,7 @@ const config = {
       }
     },
     open: true,
-    openPage: 'user/login.html'
+    openPage: 'user/index.html'
   },
   devtool: '#eval-source-map'
 }

@@ -2,7 +2,6 @@
   <el-menu mode="horizontal">
     <el-menu-item index="1" @click="navUserHome">User Home Page</el-menu-item>
     <el-menu-item index="2" @click="navCustomerHome">Customer Home Page</el-menu-item>
-    <el-menu-item index="3" @click="navUserLogin">User Login Page</el-menu-item>
   </el-menu>
 </template>
 
@@ -14,9 +13,6 @@
       },
       navCustomerHome () {
         location.assign('../customer/home.html')
-      },
-      navUserLogin () {
-        location.assign('../user/login.html')
       }
     }
   }
