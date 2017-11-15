@@ -1,10 +1,10 @@
 <template>
   <div class="counters">
     <el-row class="counter-display">
-      <p>Vuex Store Count: {{ storeCount }}</p>
-      <p>Vuex Session Count: {{ sessionCount }}</p>
-      <p>Vuex Local Count: {{ localCount }}</p>
-      <p>Vuex Cookie Count: {{ cookieCount }}</p>
+      <p>Vuex Object Count: {{ storeCount }}</p>
+      <p>Session Storage Count: {{ sessionCount }}</p>
+      <p>Local Storage Count: {{ localCount }}</p>
+      <p>Cookie Count: {{ cookieCount }}</p>
     </el-row>
     <hr>
     <el-row class="button-row">
@@ -20,16 +20,16 @@
   export default {
     methods: {
       storeIncrement () {
-        this.$store.commit('incrementStoreCount')
+        this.$store.dispatch('incrementStoreCount')
       },
       sessionIncrement () {
-        this.$store.commit('incrementSessionCount')
+        this.$store.dispatch('incrementSessionCount')
       },
       localIncrement () {
-        this.$store.commit('incrementLocalCount')
+        this.$store.dispatch('incrementLocalCount')
       },
       cookieIncrement () {
-        this.$store.commit('incrementCookieCount')
+        this.$store.dispatch('incrementCookieCount')
       }
     },
     computed: {

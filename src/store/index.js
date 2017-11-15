@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Vuex, {Payload, Store} from 'vuex'
 import VuexPersistence from 'vuex-persist'
 import Cookies from 'js-cookie'
-import sessionModule from './modules/session'
-import localModule from './modules/local'
-import cookieModule from './modules/cookie'
+import session from './modules/session'
+import local from './modules/local'
+import cookie from './modules/cookie'
 
 Vue.use(Vuex)
 
@@ -45,10 +45,15 @@ const store = new Vuex.Store({
       state.count++
     }
   },
+  actions: {
+    incrementStoreCount (context) {
+      context.commit('incrementStoreCount')
+    }
+  },
   modules: {
-    session: sessionModule,
-    local: localModule,
-    cookie: cookieModule
+    session,
+    local,
+    cookie
   },
   plugins: [vuexLocal.plugin, vuexSession.plugin, vuexCookie.plugin]
 })
