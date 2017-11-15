@@ -1,5 +1,6 @@
 export default {
   state: {
+    name: 'session store',
     count: 0
   },
   mutations: {

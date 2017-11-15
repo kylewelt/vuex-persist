@@ -31,7 +31,7 @@ On either of the main pages, there will be displayed several simple interactive 
 
 By navigating between pages, closing browser windows, etc., we can see how the counter values are each affected.
 
-Local storage, session storage, and cookies can be viewed directly within the application tab of the browser developer tools.
+Local storage, session storage, and cookies can be viewed and cleared directly within the application tab of the browser developer tools.
 
 
 ## Structure

@@ -37,6 +37,7 @@ const vuexCookie = new VuexPersistence({
 
 const store = new Vuex.Store({
   state: {
+    name: 'vuex store',
     count: 0
   },
   mutations: {

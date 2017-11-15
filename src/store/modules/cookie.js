@@ -1,5 +1,6 @@
 export default {
   state: {
+    name: 'cookie',
     count: 0
   },
   mutations: {
