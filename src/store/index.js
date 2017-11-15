@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuex, {Payload, Store} from 'vuex'
 import VuexPersistence from 'vuex-persist'
 import Cookies from 'js-cookie'
-
 import sessionModule from './modules/session'
 import localModule from './modules/local'
 import cookieModule from './modules/cookie'
@@ -13,7 +12,7 @@ Vue.config.debug = true
 Vue.config.devtools = true
 
 
-// define our persistence instances 
+// define which modules will be persisted, and in which manner
 
 const vuexSession = new VuexPersistence({
   storage: window.sessionStorage,
@@ -34,7 +33,7 @@ const vuexCookie = new VuexPersistence({
 })
 
 
-// define our store
+// define our store and its modules
 
 const store = new Vuex.Store({
   state: {

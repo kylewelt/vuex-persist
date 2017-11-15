@@ -1,6 +1,42 @@
-# new-project
+# vuex-persist
 
 > A Vue.js project
+
+## Dev
+
+``` bash
+# serve with hot reload at localhost:8010
+npm install
+npm run dev
+
+```
+
+## Pages
+
+[http://localhost:8010/user/login.html](http://localhost:8010/user/login.html)
+
+[http://localhost:8010/user/index.html](http://localhost:8010/user/index.html)
+
+[http://localhost:8010/customer/index.html](http://localhost:8010/customer/index.html)
+
+
+## Vuex Persistence Demo
+
+On either of the main pages, there will be displayed several simple interactive counters, with each accessing their own counter value from different store loctions.
+
+1. Default Vuex store object
+2. Session storage
+3. Local storage
+4. Cookie storage
+
+By navigating between pages, closing browser windows, etc., we can see how the counter values are each affected.
+
+
+## Structure
+
+The Vuex store object is built with three modules, one for each of the main client data persistence options available. There is also a counter value on the Vuex store object which is not peristed loally, to demonstrate the base behavior.
+
+Although we can dictate as much of the Vuex store object we desire to be persisted in each client storage option, for this demo each storage option will persist only one specific module of the Vuex store.
 
 ## Features
 
@@ -9,97 +45,5 @@
 3. [ElementUI](https://github.com/ElemeFE/element)
 4. [Eslint](https://github.com/eslint/eslint)
 5. [Postcss](https://github.com/postcss/postcss)
-
-## Dev
-
-``` bash
-# serve with hot reload at localhost:8010
-npm run dev
-
-```
-
-[http://localhost:8010/user/login.html](http://localhost:8010/user/login.html)
-
-[http://localhost:8010/user/index.html](http://localhost:8010/user/index.html)
-
-[http://localhost:8010/customer/index.html](http://localhost:8010/customer/index.html)
-
-## Build
-
-``` bash
-# build for production with minification
-npm run build // Firstly
-node server.js  // Secondly
-
-```
-Then visit the pages
-[http://localhost:2333/user/login.html](http://localhost:2333/user/login.html)
-
-## Root Folder Structure
-
-```bash
-├── src  # main folder
-│   ├── assets  # common assets folder
-│   │   ├── img
-│   │   │   └── logo.png
-│   │   ├── js
-│   │   └── css
-│   ├── components # common components folder
-│   │   └── modal.vue
-│   └── pages  # pages
-│       ├── user  # user part (folder name can be customized)
-│       │   ├── login # login.html (folder name can be customized)
-│       │   │   ├── app.js   # entry js (file name can't be customized unless you change the webpack.config.js)
-│       │   │   ├── app.vue  # login vue (file name can be customized)
-│       │   │   └── app.html # template html (file name can't be customized unless you change the webpack.config.js)
-│       │   └── index # index.html
-│       │       ├── app.js
-│       │       ├── app.html
-│       │       └── app.vue
-│       └── customer # customer part (folder name can be customized)
-│           └── home # home.html
-│               ├── app.html
-│               ├── app.js
-│               └── app.vue
-├── LICENSE
-├── .babelrc          # babel config (es2015 default)
-├── .eslintrc.js      # eslint config (eslint-config-vue default)
-├── server.js         # port 2333
-├── package.json
-├── postcss.config.js # postcss (autoprefixer default)
-├── webpack.config.js
-└── README.md
-```
-
-## Dist Folder Structure
-
-```bash
-├── assets
-│   ├── css
-│   │   ├── customer
-│   │   │   ├── home.css
-│   │   │   └── home.css.map
-│   │   ├── user
-│   │   │   ├── index.css
-│   │   │   ├── index.css.map
-│   │   │   ├── login.css
-│   │   │   └── login.css.map
-│   │   ├── vendors.css
-│   │   └── vendors.css.map
-│   └── js
-│       ├── customer
-│       │   └── home.js
-│       ├── user
-│       │   ├── index.js
-│       │   └── login.js
-│       └── vendors.js
-├── b02bdc1b846fd65473922f5f62832108.ttf
-├── customer
-│   └── home.html
-├── logo.png
-└── user
-    ├── index.html
-    └── login.html
-```
-
-For detailed explanation on how things work, checkout the [guide](https://github.com/Plortinus/vue-multiple-pages)
+6. [Vuex](https://github.com/vuejs/vuex)
+7. [vuex-persist](https://github.com/championswimmer/vuex-persist)
