@@ -1,4 +1,4 @@
-# vuex-persist
+# vuex-persist-demo
 
 > A Vue.js project
 
