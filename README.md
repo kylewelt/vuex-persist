@@ -1,6 +1,8 @@
 # vuex-persist-demo
 
-> A Vue.js project
+> A demo showcasing different persitance options for passing a Vuex store between multiple Vue instances when navigating a multi-page Vue application. This project demonstrates how to save store data to sessionStorage, localStorage, or within a cookie. This allows for persistence and access of store data which would be cleared (and the store set to its default data object) upon separate page loads.
+
+This demo is built using a multi-page application structure based on the [https://github.com/Plortinus/vue-multiple-pages](vue-multiple-pages) project, and makes use of the [https://github.com/championswimmer/vuex-persist](vuex-persist) plugin.
 
 ## Dev
 
